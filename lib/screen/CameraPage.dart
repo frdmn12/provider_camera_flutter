@@ -42,7 +42,7 @@ class _CameraPageState extends State<CameraPage> {
   @override
   Widget build(BuildContext context) {
     if (_cameraController == null || !_cameraController.value.isInitialized) {
-      return Center(
+      return const Center(
         child: CircularProgressIndicator(),
       );
     }

@@ -30,7 +30,6 @@ class HomePage extends StatelessWidget {
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
-                    // Anda dapat menambahkan fungsi atau aksi di sini
                     onTap: () {
                       Navigator.push(
                         context,
@@ -52,7 +51,10 @@ class HomePage extends StatelessWidget {
                     MaterialPageRoute(
                         builder: (_) => CameraPage(cameras: value))));
               },
-              child: Icon(Icons.camera, size: 50,),
+              child: Icon(
+                Icons.camera,
+                size: 50,
+              ),
             )
           ],
         ),
